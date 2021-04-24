@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/", methods=['GET'])
 def show_tables():
     pd.set_option("expand_frame_repr", False)
     #pd.set_option('max_colwidth', None)
@@ -22,7 +22,7 @@ def show_tables():
     titles = ['na', 'Report card'])
 
 if __name__ == "__main__":
-    app.run(debug=True, port=7000, host="0.0.0.0")
+    app.run(debug=True, port=5000, host="0.0.0.0")
 
 
 #import pandas as pd
