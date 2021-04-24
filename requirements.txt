@@ -1,4 +1,5 @@
 Flask
 pandas
 gunicorn
-xlrd
+xlrd >= 2.0
+openpyxl
